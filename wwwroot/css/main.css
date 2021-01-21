@@ -1,0 +1,62 @@
+﻿body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url('../img/Background.jpg');
+    color:white;
+}
+
+.center {
+    text-align: center;
+    list-style-position: inside;
+}
+img{
+    width:225px;
+    height:300px;
+}
+div.main {
+    margin: auto;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+p.paragraph{
+    width:50%;
+    margin-top: 0;
+    margin:auto;
+}
+ol.jobs{
+    padding-left:0;
+}
+table.calculator {
+    margin: auto;
+    font-size:15pt;
+    border-collapse:collapse;
+}
+input[type="text"] {
+    font-size: 15pt;
+    width: 50px;
+    text-align:center;
+}
+input.button {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    color:white;
+    background-color: rgb(32, 134, 55);
+    border-color: rgb(37, 156, 64);
+    cursor:pointer;
+}
+td{
+    padding-left:20px;
+    padding-right:20px;
+}
+thead {
+    border-bottom: 1px solid white;
+}
