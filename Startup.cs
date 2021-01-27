@@ -35,6 +35,7 @@ namespace Assignment1_JacksonSecrist
             //        await context.Response.WriteAsync("Hello World!");
             //    });
             //});
+            app.UseNodeModules();
             app.UseDefaultFiles();
             app.UseStaticFiles();
         }
