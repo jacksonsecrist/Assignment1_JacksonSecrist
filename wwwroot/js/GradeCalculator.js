@@ -11,5 +11,5 @@
 
     //populate fields with calculated value and unhide
     $("#finalGrade").text(finalGrade);
-    $("#finalGradeBox").hidden = false;
+    $("#finalGradeBox").show();
 });
