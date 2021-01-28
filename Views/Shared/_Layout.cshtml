@@ -5,15 +5,14 @@
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
     <link href="~/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/main.css" rel="stylesheet" />
-    <link rel="icon" href="img/favicon.ico" />
+    <link href="~/css/main.css" rel="stylesheet" />
+    <link rel="icon" href="~/img/favicon.ico" />
 </head>
 <body>
     <header class="center">
         <h1>@ViewBag.Title</h1>
-        <a asp-controller="Home" asp-action="Index">Home</a>
-        <br />
-        <a asp-controller="Home" asp-action="GradeCalculator">Grade Calculator</a>
+        <a asp-controller="Home" asp-action="Index" class="btn btn-primary">Home</a>
+        <a asp-controller="Home" asp-action="GradeCalculator" class="btn btn-primary">Grade Calculator</a>
     </header>
     <div>
         @RenderBody()

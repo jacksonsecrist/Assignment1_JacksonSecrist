@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Assignment1_JacksonSecrist.Models;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +14,14 @@ namespace Assignment1_JacksonSecrist.Controllers
             return View();
         }
 
+        [HttpGet]
         public ActionResult GradeCalculator()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult GradeCalculator(GradeCalculatorModel newFinalGrade)
         {
             return View();
         }

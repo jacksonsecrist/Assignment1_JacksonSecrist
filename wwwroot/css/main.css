@@ -30,12 +30,17 @@ table.calculator {
     font-size:15pt;
     border-collapse:collapse;
 }
-input[type="text"] {
+input[type="text"].form {
     font-size: 15pt;
     width: 50px;
     text-align:center;
 }
-input.button {
+input[type="text"].output {
+    font-size: 15pt;
+    width: 150px;
+    text-align: center;
+}
+/*input.button {
     display: inline-block;
     font-weight: 400;
     text-align: center;
@@ -52,7 +57,7 @@ input.button {
     background-color: rgb(32, 134, 55);
     border-color: rgb(37, 156, 64);
     cursor:pointer;
-}
+}*/
 td{
     padding-left:20px;
     padding-right:20px;

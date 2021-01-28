@@ -4,51 +4,57 @@
 @{
     ViewBag.Title = "Grade Calculator";
 }
+
+@model GradeCalculatorModel
 <div class="center">
-    <table class="calculator">
-        <thead>
+    <form method="post">
+        <table class="calculator">
+            <thead>
+                <tr>
+                    <td>Category</td>
+                    <td>Weight</td>
+                    <td>Your Grade*</td>
+                </tr>
+            </thead>
             <tr>
-                <td>Category</td>
-                <td>Weight</td>
-                <td>Your Grade*</td>
+                <td colspan="3">&nbsp;</td>
             </tr>
-        </thead>
-        <tr>
-            <td colspan="3">&nbsp;</td>
-        </tr>
-        <tr>
-            <td><label>Assignments</label></td>
-            <td>50%</td>
-            <td><input id="assignments" type="text" /> %</td>
-        </tr>
-        <tr>
-            <td><label>Group Project</label></td>
-            <td>10%</td>
-            <td><input id="projects" type="text" /> %</td>
-        </tr>
-        <tr>
-            <td><label>Quizzes</label></td>
-            <td>10%</td>
-            <td><input id="quizzes" type="text" /> %</td>
-        </tr>
-        <tr>
-            <td><label>Exams</label></td>
-            <td>20%</td>
-            <td><input id="exams" type="text" /> %</td>
-        </tr>
-        <tr>
-            <td><label>INTEX</label></td>
-            <td>10%</td>
-            <td><input id="intex" type="text" /> %</td>
-        </tr>
-    </table>
-    <br />
-    <div id="finalGradeBox" style="font-size:16pt;" hidden>
-        <span>Final Grade: </span><span id="finalGrade"></span>
+            <tr>
+                <td><label>Assignments</label></td>
+                <td>50%</td>
+                <td><input id="assignments" class="form" type="text" asp-for="Assignments" /> %</td>
+            </tr>
+            <tr>
+                <td><label>Group Project</label></td>
+                <td>10%</td>
+                <td><input id="projects" class="form" type="text" asp-for="GroupProject" /> %</td>
+            </tr>
+            <tr>
+                <td><label>Quizzes</label></td>
+                <td>10%</td>
+                <td><input id="quizzes" class="form" type="text" asp-for="Quizzes" /> %</td>
+            </tr>
+            <tr>
+                <td><label>Exams</label></td>
+                <td>20%</td>
+                <td><input id="exams" class="form" type="text" asp-for="Exams" /> %</td>
+            </tr>
+            <tr>
+                <td><label>INTEX</label></td>
+                <td>10%</td>
+                <td><input id="intex" class="form" type="text" asp-for="Intex" /> %</td>
+            </tr>
+        </table>
+        <div id="validation" asp-validation-summary="All"></div>
+        <br />
+        <div id="finalGradeBox" style="font-size:16pt;">
+            <span>Final Grade: </span><input class="output" id="finalGrade" asp-for="FinalGrade" readonly />
+            <br /><br />
+        </div>
+        <input id="calc" class="btn btn-success" type="submit" value="Calculate" />
+        <br />
+        <br />
+        <span>* Please input grades in percent form without the % sign</span>
         <br /><br />
-    </div>
-    <input id="calc" class="button" type="button" value="Calculate" />
-    <br />
-    <br />
-    <span>* Please input grades in percent form without the % sign</span>
+    </form>
 </div>
