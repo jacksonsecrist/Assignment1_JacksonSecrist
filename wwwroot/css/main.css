@@ -1,7 +1,7 @@
 ﻿body {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-image: url('../img/Background.jpg');
-    color:white;
+    /*background-color:black;
+    color:white;*/
 }
 
 .center {
@@ -15,7 +15,7 @@ img{
 div.main {
     margin: auto;
     width: 50%;
-    background-color: rgba(0, 0, 0, 0.8);
+    /*background-color: rgba(0, 0, 0, 0.8);*/
 }
 p.paragraph{
     width:50%;
